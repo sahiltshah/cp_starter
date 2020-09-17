@@ -1,6 +1,6 @@
 # Shell Script Use for quick C++ program writing
 
-For every new C++ program to be created, the standard procedure has always has been to make a ```program_name.cpp``` file. Then open it and add relevant header files, ```using namespace std;``` and then and ```int main()``` function with a ```return 0;``` instruction at the last. Then the file needs to be saved. Then if you are slightly experienced at competitive programming you would have learnt that it makes more sense to simply store the test-cases in a text file instead of enterring it manually in command line everytime, so you would even be creating an ```program_name_input.txt``` file to store your test-cases. And maybe even an output file to store your output for future reference. 
+For every new C++ program to be created, the standard procedure has always has been to make a ```program_name.cpp``` file. Then open it and add relevant header files, ```using namespace std;``` and then and ```int main()``` function with a ```return 0;``` instruction at the last. Then the file needs to be saved. Then if you are slightly experienced, you would have learnt that it makes more sense to simply store the test-cases in a text file instead of enterring it manually in command line everytime, so you would even be creating an ```program_name_input.txt``` file to store your test-cases. And maybe even an output file to store your output for future reference. 
 
 Upon saving, the cpp file has to be compiled using ```g++ program_name.cpp``` and then run with the input test casese using ```./a.out <program_input.txt> program_output.txt``` if you've not given a unique name to the compiled file. 
 
@@ -9,9 +9,9 @@ All this process is simply tedious and redundant. In online contests where rank 
 A simple solution is to use a pre-designed shell script that takes care of all the repetitive work so you can focus on writing/fixing what's important without wasting time. 
 
 I've made a simple shell script called ```caller.sh```. Ensure that your program's folder has this file with the requisite access level. And then its all just cakewalk. 
-Everytime you want to create a new program, you just invoke/run the caller file using ```./caller.sh```. It will have a prompt for a name you wish to enter. Enter that and within seconds a file for the cpp-program with basic header files, shell script for compiling and running that file, input text file for the test cases and output text file for the program outputs. 
+Everytime you want to create a new program, you just invoke/run the caller file using ```./caller.sh```. It will have a prompt for a name you wish to enter. Enter that and within seconds a file for the cpp-program with basic header files, shell script for compiling and running that file, input text file for the test cases and output text file for the program is created. 
 
-Now during coding your work has just reduced to modifying your cpp-file, saving it and then running ```./program_name```, this is a program-specific shell file that will compile and run at the same time for you. 
+Now during coding, your work has slightly reduced to modifying your cpp-file, saving it and then running ```./program_name```, this is a program-specific shell file that will compile and run at the same time for you. You don't have to manually compile it first and then run it or attach input and output files. The program-specific shell files created for each file take care of it all. Also for each program-specific script, the chmod command has already been taken care of by the outer script, so you need not bother. 
 
 If you use this process over and over, your main folder will be having the ```caller.sh``` generic file and 4 files for each of the programs. Note that the program-specific shell files are added only to combine the compiling and running with input location all in one simple shell instruction
 
@@ -19,7 +19,7 @@ Happy coding :)
 
 ## Work till now
 
-After a few failed iterations I've created a [shell script](https://github.com/sahiltshah98/shell/blob/master/caller.sh) that makes a C++, Input, Output and corresponding Shell script file after a user-prompt.
+After a few failed iterations I've created a [shell script](https://github.com/sahiltshah98/cp_starter/blob/master/caller.sh) that makes a C++, Input, Output and corresponding Shell script file after a user-prompt.
 
 ```bash
 echo What is the name of the program?
@@ -60,7 +60,7 @@ caller.sh
 sahilshah@sahil-ma cp % chmod +x caller.sh
 ```
 ### Generic use
-We input the name long_challenge_1 when asked in prompt
+We input the name 'long_challenge_1' when asked in prompt ( You can use any program name as you wish)
 
 ```bash
 sahilshah@sahil-ma cp % ./caller.sh
@@ -86,10 +86,23 @@ long_challenge_1.cpp		long_challenge_1_output.txt
 long_challenge_1.sh
 ```
 
+For all further modifications to the program, simply save the program and then run ```./long_challenge_1``` and it will compile and run again. Your output will always be stored in the ```long_challenge_1_output.txt``` and it will overwrite the old output everytime the program is run again.
+Modify your input from the ```long_challenge_1_input.txt```
+
 Note that after running `caller.sh` just wait for a few seconds and all the files will be created. 
 
 ### File examples:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+#### Working screenshot
+
+![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/Screenshot%202020-09-17%20at%2012.08.07%20PM.png?raw=true)
+
+#### Program cpp file created with the header files
+```vi long_challenge_1.cpp```
+![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/program%20cpp%20file%20created.png?raw=true)
+
+#### Program specific shell script created for compiling and running
+```vi long_challenge_1.sh```
+![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/specific%20shell%20file%20for%20each%20program%20created.png?raw=true)
 
 
 
