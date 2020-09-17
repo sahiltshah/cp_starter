@@ -39,7 +39,7 @@ Note that the first echo line literally contains all the generic repetitive stuf
 
 ## Usage instructions
 
-Download the [`caller.sh`](https://github.com/sahiltshah98/shell/blob/master/caller.sh) file into the target directory, then update the access level
+Download the [`caller.sh`](https://github.com/cp_starter/shell/blob/master/caller.sh) file into the target directory, then update the access level
 ```bash
 chmod +x caller.sh
 ```
@@ -52,76 +52,17 @@ Now just directly run the file and follow on-terminal instructions:
 [Just for verification] Use the `ls` command and all the new files with the inputed `filename` shall be shown
 
 ## Usage example
+### First-time use
 ```bash
-Last login: Thu Sep 17 11:56:23 on ttys002
-sahilshah@sahil-ma ~ % cd Documents 
-sahilshah@sahil-ma Documents % cd cp_starter 
-sahilshah@sahil-ma cp_starter % ls
-README.md
-Screenshot 2020-09-17 at 12.06.59 PM.png
-Screenshot 2020-09-17 at 12.08.07 PM.png
-Screenshot 2020-09-17 at 12.09.14 PM.png
-caller.sh
-sahilshah@sahil-ma cp_starter % git add .
-sahilshah@sahil-ma cp_starter % git commit -m "added screenshots for reference"
-[master f1a3e1d] added screenshots for reference
- Committer: Sahil Shah <sahilshah@sahil-ma.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 5 files changed, 11 insertions(+)
- create mode 100644 .DS_Store
- create mode 100644 Screenshot 2020-09-17 at 12.06.59 PM.png
- create mode 100644 Screenshot 2020-09-17 at 12.08.07 PM.png
- create mode 100644 Screenshot 2020-09-17 at 12.09.14 PM.png
- create mode 100755 caller.sh
-sahilshah@sahil-ma cp_starter % git push origin master
-warning: redirecting to https://github.com/sahiltshah98/cp_starter.git/
-Enumerating objects: 8, done.
-Counting objects: 100% (8/8), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 209.21 KiB | 13.08 MiB/s, done.
-Total 7 (delta 0), reused 0 (delta 0)
-To https://www.github.com/sahiltshah98/cp_starter
-   7d6919b..f1a3e1d  master -> master
-sahilshah@sahil-ma cp_starter % ls
-README.md
-Screenshot 2020-09-17 at 12.06.59 PM.png
-Screenshot 2020-09-17 at 12.08.07 PM.png
-Screenshot 2020-09-17 at 12.09.14 PM.png
-caller.sh
-sahilshah@sahil-ma cp_starter % ls 
-README.md
-Screenshot 2020-09-17 at 12.06.59 PM.png
-Screenshot 2020-09-17 at 12.08.07 PM.png
-Screenshot 2020-09-17 at 12.09.14 PM.png
-caller.sh
-sahilshah@sahil-ma cp_starter % cd ..
-sahilshah@sahil-ma Documents % ls
-code		cp_starter	python		sudoku
-codechef	data_mining	shell
-sahilshah@sahil-ma Documents % mkdir cp
-sahilshah@sahil-ma Documents % ls
-code		cp		data_mining	shell
-codechef	cp_starter	python		sudoku
-sahilshah@sahil-ma Documents % clear
-
 sahilshah@sahil-ma Documents % cd cp
 sahilshah@sahil-ma cp % ls
 caller.sh
 sahilshah@sahil-ma cp % chmod +x caller.sh
-sahilshah@sahil-ma cp % ls
-caller.sh
+```
+### Generic use
+We input the name long_challenge_1 when asked in prompt
+
+```bash
 sahilshah@sahil-ma cp % ./caller.sh
 What is the name of the program?
 long_challenge_1
@@ -137,11 +78,19 @@ Completed creating programs:
 2. long_challenge_1_input.txt
 3. long_challenge_1_output.txt
 4. long_challenge_1.sh (for compiling and running the program file)
-sahilshah@sahil-ma cp % 
+
+
+sahilshah@sahil-ma cp % ls
+caller.sh			long_challenge_1_input.txt
+long_challenge_1.cpp		long_challenge_1_output.txt
+long_challenge_1.sh
 ```
 
-
 Note that after running `caller.sh` just wait for a few seconds and all the files will be created. 
+
+### File examples:
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 
 
 
