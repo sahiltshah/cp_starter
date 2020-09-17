@@ -57,6 +57,17 @@ Now just directly run the file and follow on-terminal instructions:
 
 
 
+## Troubleshooting
+
+If you ever get:
+```bash
+sahilshah@sahil-ma cp_starter % ./caller.sh
+zsh: permission denied: ./caller.sh
+```
+This means that you haven't changed the access-level for that file in the folder. It's pretty simple,
+```bash
+sahilshah@sahil-ma cp_starter % chmod +x caller.sh
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
