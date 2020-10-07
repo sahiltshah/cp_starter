@@ -19,7 +19,7 @@ Happy coding :)
 
 ## Work till now
 
-After a few failed iterations I've created a [shell script](https://github.com/sahiltshah98/cp_starter/blob/master/caller.sh) that makes a C++, Input, Output and corresponding Shell script file after a user-prompt.
+After a few failed iterations I've created a [shell script](https://github.com/sahiltshah/cp_starter/blob/master/caller.sh) that makes a C++, Input, Output and corresponding Shell script file after a user-prompt.
 
 ```bash
 echo What is the name of the program?
@@ -94,15 +94,15 @@ Note that after running `caller.sh` just wait for a few seconds and all the file
 ### File examples:
 #### Working screenshot
 
-![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/Screenshot%202020-09-17%20at%2012.08.07%20PM.png?raw=true)
+![alt text](https://github.com/sahiltshah/cp_starter/blob/master/Screenshot%202020-09-17%20at%2012.08.07%20PM.png?raw=true)
 
 #### Program cpp file created with the header files
 ```vi long_challenge_1.cpp```
-![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/program%20cpp%20file%20created.png?raw=true)
+![alt text](https://github.com/sahiltshah/cp_starter/blob/master/program%20cpp%20file%20created.png?raw=true)
 
 #### Program specific shell script created for compiling and running
 ```vi long_challenge_1.sh```
-![alt text](https://github.com/sahiltshah98/cp_starter/blob/master/specific%20shell%20file%20for%20each%20program%20created.png?raw=true)
+![alt text](https://github.com/sahiltshah/cp_starter/blob/master/specific%20shell%20file%20for%20each%20program%20created.png?raw=true)
 
 
 
